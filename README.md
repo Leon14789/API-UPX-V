@@ -77,7 +77,8 @@ Endpoints da API
 
 <ul>
 <li> POST /api/gerar-senha: Gera uma nova senha digital. </li>
-<li> GET /api/proxima-senha: Retorna a próxima senha a ser chamada. </li>
-<li> POST /api/chamar-senha: Chama a próxima senha disponível. </li>
-<li> GET /api/historico: Retorna o histórico de senhas chamadas. </li>
+<li> GET /api/listar-senhas Lista todas as senhas. </li>
+<li> POST /api/chamar-senha Lista todas as senhas. </li>
+
+
 </ul>

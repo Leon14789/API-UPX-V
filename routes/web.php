@@ -19,10 +19,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::get('/teste', [PasswordController ::class, 'teste']);
-
+Route::get('/api/listar-senhas', [PasswordController::class, 'index']);
 
 Route::post('/api/gerar-senha', [PasswordController::class, 'store']);
-Route::post('/api/listar-senhas', [PasswordController::class, 'index']);
+Route::post('/api/chamar-senhar', [PasswordController::class, 'update']);
+Route::post('/api/notificar-senhar', [PasswordController::class, 'show']);
+
+
 
 require __DIR__.'/auth.php';
